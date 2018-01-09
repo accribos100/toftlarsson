@@ -871,7 +871,7 @@ figure p {
 }
 
 .prlx-1 {
-    background: url(../images/ensomhet.jpg) 100% 30% no-repeat fixed;
+    background: url(../images/background/rullestol.gif) 100% 30% no-repeat fixed;
     color: #fff;
 }
 .prlx-2 {
@@ -883,7 +883,7 @@ figure p {
 }
 .prlx-4 {
     background: url(../images/ensomhet.jpg) 100% 100% repeat fixed;
-    padding: 75px 0;
+    /*padding: 75px 0;*/
 }
 
 .wpmenucartli a { padding-right: 0px }
