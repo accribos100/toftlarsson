@@ -1,7 +1,7 @@
 jQuery(function($) {
 
     /**
-     @TODO: the Attachment section 
+     @TODO: the Attachment section
     */
 
     "use strict";
@@ -18,7 +18,7 @@ jQuery(function($) {
 
         showBox: function(el) {
             el.slideDown('slow');
-        }
+        } 
     };
 
     var submitterText = Forms.selector.find('.contact-form-send').val();
@@ -26,7 +26,7 @@ jQuery(function($) {
     Forms.selector.each(function()
     {
         var that = $(this);
-        
+
         that.submit(function(e) {
 
             var selector = e.target;
@@ -60,7 +60,7 @@ jQuery(function($) {
             // Ajax request
             $.post( that.attr('action'), "action="+ Phoenix.THEME_SLUG +"_contact_form_ajax_handler&submitted=true&security="+ Phoenix.nonce +"&" + serialiZZer, function(data) {
 
-                var $return = data;            
+                var $return = data;
 
                 if (typeof $return.emailSent != 'undefined' && $return.emailSent === true) {
                     var box = that.find('.' + Forms.status['success']);

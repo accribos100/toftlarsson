@@ -6,7 +6,7 @@ jQuery('.shortcode_tabs').each(function (index) {
         jQuery(this).addClass('it' + i);
         jQuery(this).attr('whatopen', 'body' + i);
         jQuery(this).addClass('head' + i);
-        jQuery(this).parents('.shortcode_tabs').find(
+        jQuery(this).parents('.shortcode_tabs').find( 
             '.all_heads_cont').append(this);
         i++;
     });
@@ -192,16 +192,16 @@ $(window).load(function(){
             });
             return false;
           });
-    });   
+    });
 
 
 
 
       $(document).ready(function(){
         $("a[data-gal^='prettyphoto']").prettyPhoto();
-    
+
         $(".gallery:first a[rel^='prettyPhoto']").prettyPhoto({animation_speed:'fast',theme:'light_square',autoplay_slideshow: false});
         $(".gallery:gt(0) a[rel^='prettyPhoto']").prettyPhoto({animation_speed:'normal',slideshow:10000, hideflash: true});
-    
+
 
       });
