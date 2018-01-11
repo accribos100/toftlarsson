@@ -2,12 +2,25 @@ module.exports = {
 
 
   // deifne entry point
-  entry:'./public/assets/js/main.js',
+  entry:'./public/assets/js/app.js',
 
   //define output point
   output: {
-    path: './public/assets/js/',
-    filename: 'boundle.js'
+    path: __dirname,
+    filename: 'bundle.js'
+  },
+
+  module:{
+    loaders:[
+      {
+        test:/\.js$/,
+        exclude:/(node_modules)/,
+        loader:'babel-loader',
+        query:{
+          preset:['es2015']
+        }
+      }
+    ]
   }
 
-}
+};
