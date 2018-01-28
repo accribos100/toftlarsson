@@ -3,3 +3,5 @@ firebase.json
 .git
 node_modules
 package.json
+bundle.js
+README.md
